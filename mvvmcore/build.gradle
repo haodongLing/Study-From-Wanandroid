@@ -6,6 +6,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -39,21 +40,19 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    api Deps.appcompat
-    api Deps.core_ktx
-    api Deps.kotlin_stdlib
-    api Deps.material_dialogs_core
-    api Deps.coroutines_android
-    api Deps.viewmodel_ktx
-    api Deps.lifecycle_extension
-    api Deps.recyclerView
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation Deps.kotlin_stdlib
+    implementation Deps.appcompat
+    implementation Deps.core_ktx
+
+    // Navigation
+    api Deps.navigation_fragment_ktx
+    api Deps.navigation_ui_ktx
+    implementation Deps.constraintlayout
+    implementation project(path: ':ktx')
 
     testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-}
-repositories {
-    mavenCentral()
 }

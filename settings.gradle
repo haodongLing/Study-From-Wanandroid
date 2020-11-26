@@ -1,4 +1,4 @@
-include ':VersionPlugin'
+include ':mvvmcore'//include ':VersionPlugin'
 include ':ktx'
 include ':app'
 rootProject.name = "Study From Wanandroid"
