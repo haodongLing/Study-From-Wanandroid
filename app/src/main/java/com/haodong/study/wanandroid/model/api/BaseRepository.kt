@@ -1,8 +1,6 @@
 package com.haodong.study.wanandroid.model.api
-
-import com.haodong.study.ktx.ext.executeCmd
 import com.haodong.study.wanandroid.model.bean.WanResponse
-import com.haodong.study.wanandroid.Result
+import com.haodong.study.mvvmcore.Result
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.coroutineScope
 import java.io.IOException
@@ -28,6 +26,7 @@ open class BaseRepository {
             Result.Error(exception);
         }
     }
+
 
     suspend fun <T : Any> executeResponse(
         response: WanResponse<T>, successBlock: (suspend CoroutineScope.() -> Unit)? = null,
