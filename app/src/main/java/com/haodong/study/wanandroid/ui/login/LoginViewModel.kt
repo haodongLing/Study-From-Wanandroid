@@ -9,7 +9,7 @@ import com.haodong.study.mvvmcore.base.BaseViewModel
 import com.haodong.study.wanandroid.CoroutinesDispatcherProvider
 import com.haodong.study.wanandroid.checkResult
 import com.haodong.study.wanandroid.model.bean.User
-import com.haodong.study.wanandroid.repository.LoginRepository
+import com.haodong.study.wanandroid.model.repository.LoginRepository
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 

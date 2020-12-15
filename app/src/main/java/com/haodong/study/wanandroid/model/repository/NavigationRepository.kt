@@ -1,4 +1,4 @@
-package com.haodong.study.wanandroid.repository
+package com.haodong.study.wanandroid.model.repository
 
 import com.haodong.study.wanandroid.model.api.BaseRepository
 import com.haodong.study.wanandroid.model.api.WanRetrofitClient

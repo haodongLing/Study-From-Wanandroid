@@ -1,4 +1,4 @@
-package com.haodong.study.wanandroid.repository
+package com.haodong.study.wanandroid.model.repository
 
 import com.google.gson.Gson
 import com.haodong.study.wanandroid.App
@@ -8,7 +8,7 @@ import com.haodong.study.wanandroid.model.api.WanService
 import com.haodong.study.wanandroid.model.bean.User
 import luyao.wanandroid.util.Preference
 import javax.inject.Inject
-import com.haodong.study.wanandroid.Result
+import com.haodong.study.mvvmcore.Result
 
 /**
  * created by linghaoDo on 2020/11/25

@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import com.haodong.study.mvvmcore.base.BaseViewModel
 import com.haodong.study.wanandroid.checkSuccess
 import com.haodong.study.wanandroid.model.bean.Navigation
-import com.haodong.study.wanandroid.repository.NavigationRepository
+import com.haodong.study.wanandroid.model.repository.NavigationRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
